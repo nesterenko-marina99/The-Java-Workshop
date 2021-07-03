@@ -22,9 +22,9 @@ public class Exercise02 {
         Iterator iterator = textSet.iterator();
         while (iterator.hasNext())
         {
-            String letter = (String) iterator.next();
-            int freq = Collections.frequency(text, letter);
-            System.out.println(letter + " appears " + freq + " times.");
+            String s = (String) iterator.next();
+            int freq = Collections.frequency(text, s);
+            System.out.println(s + " appears " + freq + " times.");
         }
     }
 }
