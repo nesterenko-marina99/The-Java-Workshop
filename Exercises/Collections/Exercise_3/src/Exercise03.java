@@ -1,5 +1,3 @@
-package ru.nesterlab;
-
 import java.io.Console;
 import java.util.*;
 
@@ -22,6 +20,7 @@ class SortByValue implements Comparator<DataPoint> {
 }
 
 public class Exercise03 {
+
     public static void main(String[] args) {
         Console cons;
         String line = "";
@@ -54,3 +53,7 @@ public class Exercise03 {
                     + frequencies.get(i).key);
     }
 }
+
+
+
+
