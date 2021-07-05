@@ -45,7 +45,7 @@ public class Exercise03 {
             DataPoint dataPoint = new DataPoint(s, freq);
             frequencies.add(dataPoint);
         }
-        Collections.sort(frequencies, new SortByValue());
+        Collections.sort(frequencies, Collections.reverseOrder(new SortByValue()));
         System.out.println("Results sorted");
         for (int i = 0; i < frequencies.size(); i++)
             System.out.println(frequencies.get(i).value
