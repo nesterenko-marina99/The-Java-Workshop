@@ -18,6 +18,11 @@ public class Exercise01 {
                 System.out.println(dir.toString());
                 return FileVisitResult.CONTINUE;
             }
+            @Override
+            public FileVisitResult visitFileFailed (Path file, IOException ioe){
+                System.out.println("visit file failed: " + file);
+                return FileVisitResult.CONTINUE;
+            }
         });
     }
 }
