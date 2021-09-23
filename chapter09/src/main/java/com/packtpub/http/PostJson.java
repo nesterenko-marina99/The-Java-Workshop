@@ -44,8 +44,6 @@ public class PostJson {
                 System.out.println(line);
             }
             in.close();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
